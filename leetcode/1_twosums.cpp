@@ -12,7 +12,7 @@ public:
             // because we are using map with unique keys, on duplicates, lets check to see if
             // there is a solution, conviently, this reduces the run time by O(n), that is
             // on insert, check if there is already a solution (before adding iter)
-						// so runtime as a whole is O(n)
+            // so runtime as a whole is O(n)
             std::unordered_map<int,int>::iterator target_iter = hash_table.find(target-nums[iter]);
             if (target_iter != hash_table.end()){
                 index_tuple = {target_iter->second, iter};
