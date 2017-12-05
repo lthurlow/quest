@@ -15,6 +15,7 @@ class Solution:
         # find the occurance of that letter and remove everything before it.
         # keep a rolling window of the substring.
         # O(s+l) time/space, s is input, l is subsequence // find on l
+        # since l < s, O(2s) -> O(s)
         temp_str = ""
         max_temp_len = 0
         current_temp_len = 0
